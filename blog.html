@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Work+Sans:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .lugrasimo-regular {
+            font-family: "Lugrasimo", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+
+<body class="lugrasimo-regular">
+    <header class="">
+        <h1 class="font-extrabold text-3xl w-28 mx-auto rounded-md p-3 bg-red-600 text-sky-200 mt-5">Blogs</h1>
+    </header>
+    <main>
+        <section class=" flex justify-center">
+            <div
+                class="bg-slate-600 font-bold text-lime-200 text-center rounded-xl shadow-xl text-2xl w-6/12 ml-10 mt-12 px-3 space-y-4 py-6">
+                <li>Discuss the scope of var, let, and const :</li>
+                <li>Tell us the use cases of null and undefined :</li>
+                <li>What do you mean by REST API ?</li>
+            </div>
+        </section>
+
+
+
+        <div class="w-11/12 mx-auto my-12">
+
+            <li class="font-bold text-2xl">Discuss the scope of var, let, and const :</li>
+
+            <h3 class="underline text-center font-semibold my-6 text-xl">Scope of Var</h3>
+
+            <P class="text-lg">Scope basically refers to the area in which these variables can be used. Var
+                declarations
+                can be
+                function/locally or
+                globally scoped.
+
+                When a var variable is declared outside of a function, the scope is global. This means that any variable
+                declared
+                outside of a function block using the var keyword is accessible throughout the entire window.
+
+                When a variable is declared inside a function, it has function scope. This indicates that it is
+                accessible
+                and
+                limited to that function.
+            </p>
+
+            <h3 class="underline font-semibold my-6 text-center text-xl">Scope of Let</h3>
+
+            <p class="text-lg">A block is a section of code that is bounded by. Curly braces house a block. A block is
+                anything
+                contained in curly brackets.
+
+                Consequently, a variable declared in a block with let can only be used in that block. </p>
+
+            <h3 class="underline font-semibold my-6 text-center text-xl">Scope of Const</h3>
+
+            <p class="text-lg">Constant values are kept for variables specified using the const keyword. Let
+                declarations and const
+                declarations have some similarities.
+
+                The scope of const declarations is blocked.
+
+                Const declarations, like let declarations are only accessible within the block in which they were made.
+
+                It is impossible to modify or re-declare const.
+
+                This indicates that within the scope of a variable declared with const, its value will not change. It
+                cannot be changed or declared again. </p>
+
+        </div>
+
+
+        <div class="w-11/12 mx-auto my-12">
+
+            <li class="font-bold text-2xl">Tell us the use cases of null and undefined :</li>
+
+            <h3 class="underline font-semibold my-5 text-center text-xl">Null</h3>
+
+            <P class="text-lg">
+                Null is used to represent an intentional absence of value. It represents a variable whose value is
+                undefined. It accepts only one value, which is null. The Null keyword is used to define the Null type in
+                TypeScript, but it is not useful because we can only assign a null value to it.
+            </p>
+
+            <h3 class="underline font-semibold my-6 text-center text-xl">Undefined</h3>
+
+            <P class="text-lg">
+                It represents uninitialized variables in TypeScript and JavaScript. It has only one value, which is
+                undefined. The undefined keyword defines the undefined type in TypeScript, but it is not useful because
+                we can only assign an undefined value to it.
+            </p>
+        </div>
+        <div class="w-11/12 mx-auto my-12">
+
+            <li class="font-bold text-2xl">What do you mean by REST API ?</li>
+
+            <h3 class="underline font-semibold my-6 text-center text-xl">What is an API?</h3>
+
+            <P class="text-lg">Since we're talking about REST APIs, our definition of an API will not go beyond the
+                scope of the web.
+
+                API stands for Application Programming Interface. An API establishes a connection between programs so
+                they can transfer data.
+
+                A program that has an API implies that some parts of its data is exposed for the client to use. The
+                client could be the frontend of the same program or an external program.
+
+                In order to get this data, a structured request has to be sent to the API. If the request meets the
+                desired requirements, a response which contains the data gets sent back to where the request was made.
+                This response usually comes in the form of JSON or XML data.
+
+                In some cases, you'll need some sort of authorization to gain access to external API data.
+
+                Every API has documentation that tells you what data is available and how to structure your request in
+                order to get a valid response.
+            </p>
+
+            <h3 class="underline font-semibold my-6 text-center text-xl">What is REST?</h3>
+
+            <p class="text-lg">
+                REST stands for REpresentational State Transfer. It is a standard that guides the design and development
+                of processes which enable us interact with data stored on a web servers.
+
+                The above definition may not look as complex or "professional" as the ones you come across on the
+                internet, but the goal here is for you to understand the basic purpose of REST APIs.
+
+                An API that complies with some or all of the six guiding constraints of REST is considered to be
+                RESTful.
+
+                We are able to communicate with servers using the HTTP protocol. With these protocols, we can Create,
+                Read, Update and Delete data – otherwise known as CRUD operations.
+
+                But how can we perform these CRUD operations and communicate with data on the server?
+
+                We can do this by sending HTTP requests, and that is where REST comes in. REST simplifies the
+                communication process by providing various HTTP methods/operations/verbs which we can use to send
+                requests to the server.
+            </p>
+        </div>
+
+
+
+
+    </main>
+
+</body>
+
+</html>
